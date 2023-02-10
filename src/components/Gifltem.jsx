@@ -1,4 +1,4 @@
-
+import  PropTypes from "prop-types"
 export const Gifltem = ({title, url, id}) => {
 
 
@@ -8,4 +8,10 @@ export const Gifltem = ({title, url, id}) => {
       <p>{title}</p>
     </div>
   )
+}
+
+
+Gifltem.PropTypes={
+  title:PropTypes.string.isRequired,
+  url:PropTypes.string.isRequired,
 }
